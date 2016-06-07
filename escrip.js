@@ -1,6 +1,6 @@
-function cargar() {
+function khe() {
   var xhttp;
-  var url = "http://andreihelo-restful-api.herokuapp.com/students";
+  var url = "http://examenextra.herokuapp.com/Tareas";
   if (window.XMLHttpRequest) {
     // code for modern browsers
     xhttp = new XMLHttpRequest();
@@ -15,19 +15,17 @@ function cargar() {
     }
   };
   console.log("Estado = "+xhttp.readyState+"  Estatus= "+xhttp.status);
-  xhttp.open("POST", url, false);
+  xhttp.open("GET", url, false);
   xhttp.send();
   console.log("Estado = "+xhttp.readyState+"  Estatus= "+xhttp.status);
 
   function hacerTablita(arr) {
-    var out = "<table>";
+    var out = "<table> <tr> <th>Tarea</th> <th>Descripcion</th> <th>Usuario</th>";
     var i;
     for(i = 0; i < arr.length; i++) {
-        out += "<tr> <td>" + arr[i].id + "</td>"+
-        "<td>" + arr[i].registration_number + "</td>"+
-        "<td>" + arr[i].name + "</td>"+
-        "<td>" + arr[i].last_name + "</td>"+
-        "<td>" + arr[i].status + "</td> </tr>";
+        out += "<tr> <td>" + arr[i].tarea + "</td>"+
+        "<td>" + arr[i].descripcion + "</td>"+
+        "<td>" + arr[i].usuario + "</td> </tr>";
         console.log(out);
     }
     out += "</table>";

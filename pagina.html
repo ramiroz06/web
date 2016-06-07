@@ -2,29 +2,33 @@
 <html>
 
 <head>
-  <meta charset="utf-8"/>
-  <title> Aeropuerto de Ciudad de Mexico </title>
-  <link rel="stylesheet" type="text/css" href="estilo.css"/>
+  <meta charset="utf-8">
+  <title> Noticias </title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
   <header>
-    <h1> Sistema de Tareas </h1>
+    <h1> Registro de Tareas </h1>
   </header>
-  <section>
-    <fieldset>
-      <form>
-        Nombre de Usuario
-        <input type="text" id=nombre>
-        <br/>Password o Pin
-        <input type="text" id="pin">
-        <br/><button id="enviar" onclick="enviar()">Enviar</button>
-      </form>
-    </fieldset>
-  </section>
   <nav>
   </nav>
+  <section>
+    <article id="articulo">
+      <fieldset>
+        <form>
+          Nombre de Usuario
+          <input type="text" id="nombre">
+          <br/>Pin
+          <input type="text" id="pin">
+          <br/><button id="enviar" onclick="khe(); return false;">Enviar</button>
+        </form>
+      </fieldset>
+    </article>
+  </section>
+
   <script type="text/javascript" src="escrip.js">
+  </script>
 </body>
 
 </html>
