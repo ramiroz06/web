@@ -17,7 +17,6 @@ function khe() {
   console.log("Estado = "+xhttp.readyState+"  Estatus= "+xhttp.status);
   xhttp.open("GET", url, false);
   xhttp.send();
-  console.log("Estado = "+xhttp.readyState+"  Estatus= "+xhttp.status);
 
   function hacerTablita(arr) {
     var out = "<table> <tr> <th>Tarea</th> <th>Descripcion</th> <th>Usuario</th>";
