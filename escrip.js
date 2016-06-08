@@ -6,6 +6,7 @@ function khe() {
     xhttp = new XMLHttpRequest();
     } else {
     // code for IE6, IE5
+    //Objeto Activex
     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
   }
   xhttp.onreadystatechange = function() {
